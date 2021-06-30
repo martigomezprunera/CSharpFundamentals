@@ -3,6 +3,7 @@ using CSharpFundamentals.Exercices;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.IO;
 
 namespace CSharpFundamentals
 {
@@ -476,7 +477,64 @@ namespace CSharpFundamentals
 
             /*------------------------ WORKING WITH TEXT -----------------------*/
             /*------------------------ EXERCICE 1 -----------------------*/
-            ExercicesWorkingWithText.Exercice1();
+            //ExercicesWorkingWithText.Exercice1();
+
+            /*------------------------ File and FileInfo -----------------------*/
+            //El arroba se utiliza para no poner el doble contrabarra
+            /*var path = @"c:\somefile";
+            File.Copy(@"c:\temp\myfile.jpg", @"c:\temp\myfile.jpg", true);
+            File.Delete(path);
+            if(File.Exists(path))
+            {
+                //Do Something
+            }
+            var content = File.ReadAllText(path);
+
+            var fileInfo = new FileInfo(path);
+            fileInfo.CopyTo("...");
+            fileInfo.Delete();
+            if(fileInfo.Exists)
+            {
+                //Do Something
+            }*/
+
+            /*------------------------ Directory and DirectoryInfo -----------------------*/
+            /*Directory.CreateDirectory("@c:\temp\folder1");
+
+            //Busca todos los archivos (3 variable de la función) con el patron especificado (2 variable de la función)
+            var files = Directory.GetFiles(@"c:\projects\CSharpFundamentasl", "*.sln*", SearchOption.AllDirectories);
+            foreach (var file in files)
+            {
+                Console.WriteLine(file);
+            }
+
+            //Busca todos los directorios (3 variable de la función) con el patron especificado (2 variable de la función)
+            var directories = Directory.GetDirectories(@"c:\projects\CSharpFundamentasl", "*.*", SearchOption.AllDirectories);
+            foreach (var directory in directories)
+            {
+                Console.WriteLine(directory);
+            }
+
+            Directory.Exists("...");
+
+            var directoryInfo = new DirectoryInfo("...");
+            directoryInfo.GetFiles();
+            directoryInfo.GetDirectories();*/
+
+            /*------------------------ Path -----------------------*/
+            /*var path = @"C:\Projects\CSharpFundamentals\HelloWorld\HelloWorld.sln";
+            var dotIndex = path.IndexOf('.');
+            var extension = path.Substring(dotIndex);
+
+            Console.WriteLine("Extension: " + Path.GetExtension(path));
+            Console.WriteLine("File Name: " + Path.GetFileName(path));
+            Console.WriteLine("File Name without Extension: " + Path.GetFileNameWithoutExtension(path));
+            Console.WriteLine("Directory Name: " + Path.GetDirectoryName(path));*/
+
+            /*------------------------ WORKING WITH FILES -----------------------*/
+            /*------------------------ EXERCICE 1 -----------------------*/
+            /*ExercicesFiles.Exercice1();
+            ExercicesFiles.Exercice2();*/
         }
     }
 }
